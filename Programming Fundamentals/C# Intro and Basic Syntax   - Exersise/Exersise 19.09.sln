@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Beverage Labels", "04. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Character Stats", "05. Character Stats\05. Character Stats.csproj", "{ECAAA3E0-FCF8-4AC7-8C0F-6A810CFE9CFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dsConsoleApplication1", "dsConsoleApplication1\dsConsoleApplication1.csproj", "{CB5A634E-FD3B-4065-9432-A1607CC46FAD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{ECAAA3E0-FCF8-4AC7-8C0F-6A810CFE9CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECAAA3E0-FCF8-4AC7-8C0F-6A810CFE9CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECAAA3E0-FCF8-4AC7-8C0F-6A810CFE9CFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB5A634E-FD3B-4065-9432-A1607CC46FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB5A634E-FD3B-4065-9432-A1607CC46FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB5A634E-FD3B-4065-9432-A1607CC46FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB5A634E-FD3B-4065-9432-A1607CC46FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
