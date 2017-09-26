@@ -12,7 +12,7 @@ namespace _11._5_Different_Num
         {
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
-           var count = 0;
+            int count = 0;
 
             for (int i = a; i <= b; i++)
             {

@@ -10,11 +10,11 @@ namespace _06.Interval_of_Num
     {
         static void Main(string[] args)
         {
-            int firstNumbre = int.Parse(Console.ReadLine());
+            int firstNumber = int.Parse(Console.ReadLine());
             int secondNumber = int.Parse(Console.ReadLine());
 
-            int maxNumber = Math.Max(firstNumbre, secondNumber);
-            int minNumber = Math.Min(firstNumbre, secondNumber);
+            int maxNumber = Math.Max(firstNumber, secondNumber);
+            int minNumber = Math.Min(firstNumber, secondNumber);
 
                 for (int i = minNumber; i <= maxNumber; i++)
                 {

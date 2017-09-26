@@ -13,7 +13,7 @@ namespace _12.Test_Numbers
             int n = int.Parse(Console.ReadLine());
             int m = int.Parse(Console.ReadLine());
             int max = int.Parse(Console.ReadLine());
-            int combinatio = 0;
+            int count = 0;
             int sum = 0;
 
 
@@ -22,21 +22,18 @@ namespace _12.Test_Numbers
                 for (int j = 1; j <= m; j++)
                 {
                     sum = sum + 3 * i * j;
-                    combinatio++;
+                    count++;
                     if (sum >= max)
                     {
-                        Console.WriteLine($"{combinatio} combinations");
+                        Console.WriteLine($"{count} combinations");
                         Console.WriteLine($"Sum: {sum} >= {max}");
                         return;
                     }
                 }
             }
             
-                Console.WriteLine($"{combinatio} combinations");
+                Console.WriteLine($"{count} combinations");
                 Console.WriteLine($"Sum: {sum}");
-           
-            
-
         }
     }
 }

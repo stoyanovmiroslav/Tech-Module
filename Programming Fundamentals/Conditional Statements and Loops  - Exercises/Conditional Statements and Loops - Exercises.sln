@@ -9,29 +9,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Choose a Drink 2.0", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Restaurant Discount", "03. Restaurant Discount\03. Restaurant Discount.csproj", "{3DC4ED44-97E3-4CD7-9BFC-66B08A204486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Triangle of Num", "10. Triangle of Num\10. Triangle of Num.csproj", "{15819B0C-3D8F-4581-B7A6-9C33F9DC4F7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Triangle of Numbers", "10. Triangle of Num\10. Triangle of Numbers.csproj", "{15819B0C-3D8F-4581-B7A6-9C33F9DC4F7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Magic Letter", "14. Magic Letter\14. Magic Letter.csproj", "{B2B34950-5BE8-4C6A-BB23-975BD196B516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Hotels", "04. Hotels\04. Hotels.csproj", "{D7DFFF70-424D-4C32-8C97-9BCDEFBFEFFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Hotel", "04. Hotels\04. Hotel.csproj", "{D7DFFF70-424D-4C32-8C97-9BCDEFBFEFFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Interval of Num", "06. Interval of Num\06. Interval of Num.csproj", "{2105F817-DED2-4E0F-869B-B560B36E9C6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Interval of Nums", "06. Interval of Num\06. Interval of Nums.csproj", "{2105F817-DED2-4E0F-869B-B560B36E9C6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Cake Ingredien", "07. Cake Ingredien\07. Cake Ingredien.csproj", "{C5728131-B03C-4EBF-A064-77F2C0D92062}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Cake Ingredients", "07. Cake Ingredien\07. Cake Ingredients.csproj", "{C5728131-B03C-4EBF-A064-77F2C0D92062}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Calories Coun", "08. Calories Coun\08. Calories Coun.csproj", "{9A56A6E9-FD18-4206-AA9C-AA511780832D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Calories Counter", "08. Calories Coun\08. Calories Counter.csproj", "{9A56A6E9-FD18-4206-AA9C-AA511780832D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Count the Integ", "09. Count the Integ\09. Count the Integ.csproj", "{AFD923A6-7390-4B2E-8FAB-8D87ECD2BC78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Count the Integers", "09. Count the Integ\09. Count the Integers.csproj", "{AFD923A6-7390-4B2E-8FAB-8D87ECD2BC78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. 5 Different Num", "11. 5 Different Num\11. 5 Different Num.csproj", "{A5A46F6B-6059-4E47-A8C2-AAC3B4443E10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. 5 Different Numbers", "11. 5 Different Num\11. 5 Different Numbers.csproj", "{A5A46F6B-6059-4E47-A8C2-AAC3B4443E10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Test Numbers", "12. Test Numbers\12. Test Numbers.csproj", "{CFEE50A5-D8DB-410E-A876-CA1AA6C4A19C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Game_of_Number", "13. Game_of_Number\13. Game_of_Number.csproj", "{303DA2EF-6317-43A1-8FBE-9FF8730242D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Game of Number", "13. Game_of_Number\13. Game of Number.csproj", "{303DA2EF-6317-43A1-8FBE-9FF8730242D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Neighbour_Wars", "15. Neighbour_Wars\15. Neighbour_Wars.csproj", "{B9C94447-D6E1-4B61-9FE1-3A1DC4F67D86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Neighbour Wars", "15. Neighbour_Wars\15. Neighbour Wars.csproj", "{B9C94447-D6E1-4B61-9FE1-3A1DC4F67D86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. WordinPlural", "05. WordinPlural\05. WordinPlural.csproj", "{0743F7FE-B2C4-4C78-945D-A612B6F0F816}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Word in Plural", "05. WordinPlural\05. Word in Plural.csproj", "{0743F7FE-B2C4-4C78-945D-A612B6F0F816}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,9 +13,9 @@ namespace _13.Game_of_Number
             int n = int.Parse(Console.ReadLine());
             int m = int.Parse(Console.ReadLine());
             int magic = int.Parse(Console.ReadLine());
-            int magica = 0;
-            int magicc = 0;
-            var combinatio = 0;
+            int firstMagic = 0;
+            int secondMagic = 0;
+            var count = 0;
 
             for (int i = n; i <= m; i++)
             {
@@ -23,19 +23,19 @@ namespace _13.Game_of_Number
                 {
                     if (i + j == magic)
                     {
-                        magica = i;
-                        magicc = j;
+                        firstMagic = i;
+                        secondMagic = j;
                     }
-                    combinatio++;
+                    count++;
                 }
             }
-            if (magica == 0)
+            if (firstMagic == 0)
             {
-                Console.WriteLine($"{combinatio} combinations - neither equals {magic}");
+                Console.WriteLine($"{count} combinations - neither equals {magic}");
             }
             else
             {
-                Console.WriteLine($"Number found! {magica} + {magicc} = {magic}");
+                Console.WriteLine($"Number found! {firstMagic} + {secondMagic} = {magic}");
             }
 
         }

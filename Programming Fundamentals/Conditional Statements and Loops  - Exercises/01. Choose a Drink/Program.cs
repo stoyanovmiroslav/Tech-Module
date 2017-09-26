@@ -20,8 +20,6 @@ namespace _01.Choose_a_Drink
                 case "SoftUni Student": Console.WriteLine("Beer"); break;
                 default: Console.WriteLine("Tea");  break;
             }
-
-
         }
     }
 }
