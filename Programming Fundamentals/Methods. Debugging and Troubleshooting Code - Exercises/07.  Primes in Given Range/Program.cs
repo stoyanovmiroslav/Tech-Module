@@ -8,25 +8,37 @@ namespace _07.Primes_in_Given_Range
 {
     class Program
     {
-        public static void Main()
+        static void Main()
         {
-            int num = 124;
-            int sum = 0;
-            while (num > 0)
-            {
-                int lastDigit = num % 10;
-                num = num / 10;
-                sum +=lastDigit;
-            }
+            int startNumber = int.Parse(Console.ReadLine());
+            int stopNumber = int.Parse(Console.ReadLine());
+            string numbers = String.Join(", ", GetPrimeNumbers(startNumber, stopNumber).ToArray());
+            Console.WriteLine(numbers);
+        }
 
-            if (sum % 7 == 0)
+
+        private static List<int> GetPrimeNumbers(int start, int stop)
+        {
+            var result = new List<int>();
+            for (int i = start; i <= stop; i++)
             {
-                Console.WriteLine(true);
+                bool isPrime = true;
+                if (i < 2) isPrime = false;
+                for (int j = 2; j < i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime)
+                {
+                    result.Add(i);
+                }
             }
-            else
-            {
-                Console.WriteLine(false);
-            }
+            return result;
         }
     }
-}
+ }
+
