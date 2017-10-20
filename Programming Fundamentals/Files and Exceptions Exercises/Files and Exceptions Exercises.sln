@@ -5,13 +5,23 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. A Miner Task", "05. A Miner Task\05. A Miner Task.csproj", "{2A2E72F9-0A77-4145-94F6-E38E03E8C7F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.  Most Frequent Number", "01.  Most Frequent Number\01.  Most Frequent Number.csproj", "{E5208D7E-F25B-4271-9776-E8A051B233C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Most Frequent Number", "01.  Most Frequent Number\01. Most Frequent Number.csproj", "{E5208D7E-F25B-4271-9776-E8A051B233C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Index of Letters", "02. Index of Letters\02. Index of Letters.csproj", "{415AB079-81C6-441F-ADD7-030ADC2D2E28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Equal Sums", "03. Equal Sums\03. Equal Sums.csproj", "{7E7D7A6C-73A5-47A8-92D4-8C55720A4F80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Max Sequence of Equal Elements", "04. Max Sequence of Equal Elements\04. Max Sequence of Equal Elements.csproj", "{B97B8FC1-1A83-4844-AF58-9396E3DE755E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Advertisement Message", "07. Advertisement Message\07. Advertisement Message.csproj", "{A50AB90F-CBCA-4AF9-8A23-71D3E72293C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Fix Emails", "06. Fix Emails\06. Fix Emails.csproj", "{C7B32E53-0C50-492A-90E8-2885264A4A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-08. Average Grades", "08. Average Grades\-08. Average Grades.csproj", "{470AF941-16A7-43AD-9F0A-ED97875FA3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-09. Book Library", "09. Book Library\-09. Book Library.csproj", "{68F66142-F491-4BDE-B6DD-2BFD51E1613D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-10. Book Library Modification", "10. Book Library Modification\-10. Book Library Modification.csproj", "{3C64E80E-F62D-4EF4-B116-E8B6119C327F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +49,26 @@ Global
 		{B97B8FC1-1A83-4844-AF58-9396E3DE755E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B97B8FC1-1A83-4844-AF58-9396E3DE755E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B97B8FC1-1A83-4844-AF58-9396E3DE755E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A50AB90F-CBCA-4AF9-8A23-71D3E72293C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50AB90F-CBCA-4AF9-8A23-71D3E72293C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50AB90F-CBCA-4AF9-8A23-71D3E72293C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50AB90F-CBCA-4AF9-8A23-71D3E72293C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B32E53-0C50-492A-90E8-2885264A4A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B32E53-0C50-492A-90E8-2885264A4A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B32E53-0C50-492A-90E8-2885264A4A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B32E53-0C50-492A-90E8-2885264A4A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470AF941-16A7-43AD-9F0A-ED97875FA3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470AF941-16A7-43AD-9F0A-ED97875FA3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470AF941-16A7-43AD-9F0A-ED97875FA3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470AF941-16A7-43AD-9F0A-ED97875FA3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F66142-F491-4BDE-B6DD-2BFD51E1613D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F66142-F491-4BDE-B6DD-2BFD51E1613D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F66142-F491-4BDE-B6DD-2BFD51E1613D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F66142-F491-4BDE-B6DD-2BFD51E1613D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C64E80E-F62D-4EF4-B116-E8B6119C327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C64E80E-F62D-4EF4-B116-E8B6119C327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C64E80E-F62D-4EF4-B116-E8B6119C327F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C64E80E-F62D-4EF4-B116-E8B6119C327F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
