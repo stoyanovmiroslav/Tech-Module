@@ -20,9 +20,9 @@ namespace _02.Advertisement_Message
             for (int i = 0; i < input; i++)
             {
                 string phrasesOutput = prases[rnd.Next(0, prases.Length)];
-                string eventsOutput = events[rnd.Next(0, prases.Length)];
-                string authorsOutput = autors[rnd.Next(0, prases.Length)];
-                string citiesOutput = cities[rnd.Next(0, prases.Length)];
+                string eventsOutput = events[rnd.Next(0, events.Length)];
+                string authorsOutput = autors[rnd.Next(0, autors.Length)];
+                string citiesOutput = cities[rnd.Next(0, cities.Length)];
                 Console.WriteLine("{0} {1} {2} {3}", phrasesOutput, eventsOutput, authorsOutput, citiesOutput);
             }                                         
         }                                            
