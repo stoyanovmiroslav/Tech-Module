@@ -14,9 +14,9 @@ namespace _05.A_Miner_Task
             string[] input = File.ReadAllLines("input.txt");
             var minerTaskDict = new Dictionary<string, long>();
 
-            for (int i = 0; i < input.Length * 2 - 2; i = i+2)
+            for (int i = 0; i < input.Length * 2 - 2; i = i + 2)
             {
-           
+
                 string inputKey = input[i];
                 if (inputKey == "stop") break;
                 string inputValueS = input[i + 1];
@@ -30,11 +30,10 @@ namespace _05.A_Miner_Task
 
                 minerTaskDict[inputKey] += inputValue;
             }
-               foreach (var item in minerTaskDict.Keys)
-                {
-                    File.AppendAllText("output.txt", $"{item} -> { minerTaskDict[item]}" + Environment.NewLine);
-                }
-          
+            foreach (var item in minerTaskDict.Keys)
+            {
+                File.AppendAllText("output.txt", $"{item} -> { minerTaskDict[item]}" + Environment.NewLine);
+            }
         }
     }
 }

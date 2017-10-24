@@ -18,7 +18,7 @@ namespace _09.Book_Library
                 library.Books = new List<Book>();
                 for (int i = 0; i < numbersOfBooks; i++)
                 {
-                    string[] booksInfo = Console.ReadLine().Split(' ');
+                    string[] booksInfo = readAllText[i+1].Split(' ');
                     Book addBookInfo = new Book();
                     addBookInfo.Title = booksInfo[0];
                     addBookInfo.Autor = booksInfo[1];
@@ -46,7 +46,7 @@ namespace _09.Book_Library
 
                 foreach (var book in booksByAutor.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
                 {
-                    Console.WriteLine("{0:F2} -> {1:F2}", book.Key, book.Value);
+                File.AppendAllText("output.txt", $"{book.Key:F2} -> { book.Value:F2}" + Environment.NewLine);
                 }
             }
         }

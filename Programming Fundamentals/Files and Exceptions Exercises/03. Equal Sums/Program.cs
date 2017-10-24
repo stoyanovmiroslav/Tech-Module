@@ -35,8 +35,6 @@ namespace _03.Equal_Sums
                 }
                 rightSum = 0;
             }
-
-
             if (numbers.Length == 1)
             {
                 File.AppendAllText("output.txt", "0");
