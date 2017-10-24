@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,14 @@ namespace _10.Book_Library_Modification
     {
         static void Main(string[] args)
         {
-            int numbersOfBooks = int.Parse(Console.ReadLine());
+            string[] readAllText = File.ReadAllLines("Input.txt");
+            int numbersOfBooks = int.Parse(readAllText[0]);
             Library library = new Library();
             library.Books = new List<Book>();
 
             for (int i = 0; i < numbersOfBooks; i++)
             {
-                string[] booksInfo = Console.ReadLine().Split(' ');
+                string[] booksInfo = readAllText[i + 1].Split(' ');
                 Book addBookInfo = new Book();
                 addBookInfo.Title = booksInfo[0];
                 addBookInfo.Autor = booksInfo[1];
@@ -28,10 +30,9 @@ namespace _10.Book_Library_Modification
 
                 library.Books.Add(addBookInfo);
             }
-            string dateTime = Console.ReadLine();
-            DateTime startDate = DateTime.ParseExact(dateTime, "dd.MM.yyyy", CultureInfo.InvariantCulture);
 
-            // DateTime startDate = DateTime.ParseExact(dateTime, "dd.MM.YYYY" , CultureInfo.InvariantCulture);
+            string dateTime = readAllText[readAllText.Length-1];
+            DateTime startDate = DateTime.ParseExact(dateTime, "dd.MM.yyyy", CultureInfo.InvariantCulture);
 
             Dictionary<string, DateTime> booksByTitle = new Dictionary<string, DateTime>();
             for (int i = 0; i < library.Books.Count; i++)
@@ -45,7 +46,7 @@ namespace _10.Book_Library_Modification
 
             foreach (var book in booksByTitle.OrderBy(x => x.Value).ThenBy(x => x.Key))
             {
-                Console.WriteLine("{0:F2} -> {1:dd.MM.yyyy}", book.Key, book.Value);
+                File.AppendAllText("output.txt", $"{book.Key:F2} -> {book.Value:dd.MM.yyyy}" + Environment.NewLine);
             }
         }
     }

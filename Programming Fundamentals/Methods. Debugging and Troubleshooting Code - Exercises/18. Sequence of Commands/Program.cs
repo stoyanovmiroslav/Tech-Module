@@ -9,64 +9,56 @@ namespace _18.Sequence_of_Commands
 {
     class Program
     {
-        private const char ArgumentsDelimiter = ' ';
-
         public static void Main()
         {
             int sizeOfArray = int.Parse(Console.ReadLine());
 
             long[] array = Console.ReadLine()
-                .Split(ArgumentsDelimiter)
+                .Split(' ')
                 .Select(long.Parse)
                 .ToArray();
 
-            // string command = Console.ReadLine();
-            string line = "";
-            while (!line.Equals("over"))
+            string[] command = Console.ReadLine().Split(' ');
+           
+            while (command[0] != "stop")
             {
-                line = Console.ReadLine().Trim();
                 int[] args = new int[2];
-                
-              string[] commanded = line.Split(' ');
-              //  long result = 0;
-              //  switch (codeArgs[0])
-
-                if (commanded[0].Equals("add") ||
-                    commanded[0].Equals("substract") ||
-                    commanded[0].Equals("multiply"))
+                if (command[0] == "add" || command[0] == "subtract" || command[0] == "multiply")
                 {
-                    string[] stringParams = line.Split(ArgumentsDelimiter);
-                    args[0] = int.Parse(stringParams[0]);
-                    args[1] = int.Parse(stringParams[1]);
+                    args[0] = int.Parse(command[1]);
+                    args[1] = int.Parse(command[2]);
 
-                    PerformAction(array, line, args);
+                    PerformAction(array, command[0], args);
+                }
+                else
+                {
+                    PerformAction(array, command[0], args);
                 }
 
-                PerformAction(array, line, args);
+
 
                 PrintArray(array);
-                Console.WriteLine('\n');
+                Console.WriteLine();
 
-                line = Console.ReadLine();
+                command = Console.ReadLine().Split(' ');
             }
         }
 
-        static void PerformAction(long[] arr, string action, int[] args)
+        static void PerformAction(long[] array, string action, int[] args)
         {
-            long[] array = arr.Clone() as long[];
-            int pos = args[0];
+            int index = args[0] - 1;
             int value = args[1];
 
             switch (action)
             {
                 case "multiply":
-                    array[pos] *= value;
+                    array[index] *= value;
                     break;
                 case "add":
-                    array[pos] += value;
+                    array[index] = value;
                     break;
                 case "subtract":
-                    array[pos] -= value;
+                    array[index] -= value;
                     break;
                 case "lshift":
                     ArrayShiftLeft(array);
@@ -79,25 +71,29 @@ namespace _18.Sequence_of_Commands
 
         private static void ArrayShiftRight(long[] array)
         {
+            long rem = array[array.Length-1];
             for (int i = array.Length - 1; i >= 1; i--)
             {
-                array[i] = array[i - 1];
+               array[i] = array[i - 1];
             }
+            array[0] = rem;
         }
 
         private static void ArrayShiftLeft(long[] array)
         {
+            long rem = array[0];
             for (int i = 0; i < array.Length - 1; i++)
             {
                 array[i] = array[i + 1];
             }
+            array[array.Length-1] = rem;
         }
 
         private static void PrintArray(long[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine(array[i] + " ");
+                Console.Write(array[i] + " ");
             }
         }
     }

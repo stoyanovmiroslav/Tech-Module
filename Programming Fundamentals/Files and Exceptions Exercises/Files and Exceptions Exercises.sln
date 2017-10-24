@@ -17,11 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Advertisement Message",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Fix Emails", "06. Fix Emails\06. Fix Emails.csproj", "{C7B32E53-0C50-492A-90E8-2885264A4A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-08. Average Grades", "08. Average Grades\-08. Average Grades.csproj", "{470AF941-16A7-43AD-9F0A-ED97875FA3C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Average Grades", "08. Average Grades\08. Average Grades.csproj", "{470AF941-16A7-43AD-9F0A-ED97875FA3C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-09. Book Library", "09. Book Library\-09. Book Library.csproj", "{68F66142-F491-4BDE-B6DD-2BFD51E1613D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Book Library", "09. Book Library\09. Book Library.csproj", "{68F66142-F491-4BDE-B6DD-2BFD51E1613D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-10. Book Library Modification", "10. Book Library Modification\-10. Book Library Modification.csproj", "{3C64E80E-F62D-4EF4-B116-E8B6119C327F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Book Library Modification", "10. Book Library Modification\10. Book Library Modification.csproj", "{3C64E80E-F62D-4EF4-B116-E8B6119C327F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
