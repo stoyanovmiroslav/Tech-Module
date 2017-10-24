@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Debugging Instruction S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Debugging Be Positive", "17. Debugging Be Positive\17. Debugging Be Positive.csproj", "{6154256A-958B-48C6-B7E7-252710E11E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-18. Sequence of Commands", "18. Sequence of Commands\-18. Sequence of Commands.csproj", "{086BC6CF-75AB-4B7F-A379-2253BA133BAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Sequence of Commands", "18. Sequence of Commands\18. Sequence of Commands.csproj", "{086BC6CF-75AB-4B7F-A379-2253BA133BAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

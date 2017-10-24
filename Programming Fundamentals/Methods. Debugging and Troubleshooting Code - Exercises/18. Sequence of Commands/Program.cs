@@ -1,7 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,7 +19,7 @@ namespace _18.Sequence_of_Commands
                 .ToArray();
 
             string[] command = Console.ReadLine().Split(' ');
-           
+
             while (command[0] != "stop")
             {
                 int[] args = new int[2];
@@ -35,11 +35,8 @@ namespace _18.Sequence_of_Commands
                     PerformAction(array, command[0], args);
                 }
 
-
-
                 PrintArray(array);
                 Console.WriteLine();
-
                 command = Console.ReadLine().Split(' ');
             }
         }
@@ -55,7 +52,7 @@ namespace _18.Sequence_of_Commands
                     array[index] *= value;
                     break;
                 case "add":
-                    array[index] = value;
+                    array[index] += value;
                     break;
                 case "subtract":
                     array[index] -= value;
@@ -71,10 +68,10 @@ namespace _18.Sequence_of_Commands
 
         private static void ArrayShiftRight(long[] array)
         {
-            long rem = array[array.Length-1];
+            long rem = array[array.Length - 1];
             for (int i = array.Length - 1; i >= 1; i--)
             {
-               array[i] = array[i - 1];
+                array[i] = array[i - 1];
             }
             array[0] = rem;
         }
@@ -86,7 +83,7 @@ namespace _18.Sequence_of_Commands
             {
                 array[i] = array[i + 1];
             }
-            array[array.Length-1] = rem;
+            array[array.Length - 1] = rem;
         }
 
         private static void PrintArray(long[] array)
