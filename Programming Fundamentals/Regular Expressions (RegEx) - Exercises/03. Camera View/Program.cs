@@ -28,8 +28,7 @@ namespace _03.Camera_View
                         if (j == (newString.Length))
                         {
                              break;
-                        }
-                           
+                        } 
                         result += newString[j];
                     }
                     result += " ";
