@@ -12,17 +12,15 @@ namespace _08.Use_Your_Chains__Buddy
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            string firstPattern = @"<p>(.*?)<\/p>";  // group1   
-            string secondPattern1 = @"[a-z0-9]+";
+            string firstPattern = @"<p>(.*?)<\/p>";
             string secondPattern = @"[\WA-Z]+";
-
-
+            
             List<string> sentence = new List<string>();
             foreach (Match m in Regex.Matches(input, firstPattern))
             {
-                string[] results = Regex.Split(m.Groups[1].ToString(), secondPattern);
-                string group = string.Join(" ", results);
-                sentence.Add(group);
+                string[] splitNotSmallLattersAndNumbers = Regex.Split(m.Groups[1].ToString(), secondPattern);
+                string words = string.Join(" ", splitNotSmallLattersAndNumbers);
+                sentence.Add(words);
             }
 
             var sentenceToChar = string.Join("", sentence).ToCharArray();
