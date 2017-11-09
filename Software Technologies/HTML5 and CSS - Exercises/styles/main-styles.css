@@ -1,0 +1,25 @@
+P {
+   font-size: 20pt;
+   text-align: center;
+    border: dashed red;
+    border-radius: 60px;
+}
+.Outside{
+    text-align: center;
+    border: blue dotted;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Middle{
+    text-align: center;
+    border: red dashed;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Inner{
+    text-align: center;
+    border: green solid;
+    border-radius: 4px;
+    padding: 10px;
+}
