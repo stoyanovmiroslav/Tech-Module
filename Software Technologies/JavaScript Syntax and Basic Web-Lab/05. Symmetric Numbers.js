@@ -1,4 +1,4 @@
-function SumNumbers(input) {
+function SymetricNumbers(input) {
   number = input.map(Number);
   let result = ' ';
     for (let i = 1; i <= number; i++)
@@ -15,4 +15,4 @@ function SumNumbers(input) {
 
 }
 
-SumNumbers(["100"]);
+SymetricNumbers(["100"]);
