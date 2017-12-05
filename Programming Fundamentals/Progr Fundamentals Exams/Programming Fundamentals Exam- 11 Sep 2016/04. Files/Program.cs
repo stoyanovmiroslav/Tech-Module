@@ -14,36 +14,36 @@ namespace _04.Files
             List<Files> listOfFiles = new List<Files>();
             for (int i = 0; i < n; i++)
             {
-                string[] input = Console.ReadLine().Split(new string[] { "\\" } , StringSplitOptions.RemoveEmptyEntries);
-                string root = input[0];
-                string lastInput = input[input.Length - 1];
-                string[] splitLastInput = lastInput.Split(';');
-                string fileName = splitLastInput[0];
-                string[] extension = fileName.Split('.');
-                ulong fileSize = ulong.Parse(splitLastInput[1]);
-
-                Files files = new Files();
-                files.FileName = fileName;
-                files.Root = root;
-                files.Size = fileSize;
-                files.Extension = extension[extension.Length-1];
-
-                listOfFiles.Add(files);
+                ReadAndAddFiles(listOfFiles);
             }
+            var dict = new Dictionary<string, long>();
+            SelectAndAddDictionary(dict, listOfFiles);
+            PrintOutput(dict);
+        }
+
+        private static void SelectAndAddDictionary(Dictionary<string, long> dict, List<Files> listOfFiles)
+        {
             string[] lastLineCommand = Console.ReadLine().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
             string extensions = lastLineCommand[0];
             string roots = lastLineCommand[2];
-
-            var dict = new Dictionary<string, ulong>();
-
             for (int i = 0; i < listOfFiles.Count; i++)
             {
                 if (listOfFiles[i].Root == roots && listOfFiles[i].Extension == extensions)
                 {
-                    dict.Add(listOfFiles[i].FileName, listOfFiles[i].Size);
+                    if (!dict.ContainsKey(listOfFiles[i].FileName))
+                    {
+                        dict.Add(listOfFiles[i].FileName, listOfFiles[i].Size);
+                    }
+                    else
+                    {
+                        dict[listOfFiles[i].FileName] = listOfFiles[i].Size;
+                    }
                 }
             }
-          
+        }
+
+        private static void PrintOutput(Dictionary<string, long> dict)
+        {
             foreach (var item in dict.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
             {
                 Console.WriteLine("{0} - {1} KB ", item.Key, item.Value);
@@ -53,12 +53,31 @@ namespace _04.Files
                 Console.WriteLine("No");
             }
         }
+
+        private static void ReadAndAddFiles(List<Files> listOfFiles)
+        {
+            string[] input = Console.ReadLine().Split(new string[] { "\\" }, StringSplitOptions.RemoveEmptyEntries);
+            string root = input[0];
+            string lastInput = input[input.Length - 1];
+            string[] splitLastInput = lastInput.Split(';');
+            string fileName = splitLastInput[0];
+            string[] extension = fileName.Split('.');
+            long fileSize = long.Parse(splitLastInput[1]);
+
+            Files files = new Files();
+            files.FileName = fileName;
+            files.Root = root;
+            files.Size = fileSize;
+            files.Extension = extension[extension.Length - 1];
+
+            listOfFiles.Add(files);
+        }
     }
     class Files
     {
         public string FileName { get; set; }
         public string Root { get; set; }
-        public ulong Size { get; set; }
+        public long Size { get; set; }
         public string Extension { get; set; }
 
     }

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Thea the Photographer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Trophon the Grumpy Cat", "02. Trophon the Grumpy Cat\02. Trophon the Grumpy Cat.csproj", "{916729DD-3223-4AD5-8A6E-45AC7EE1F62C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Portal", "03. Portal\03. Portal.csproj", "{E6BBAEBE-A71F-4C3E-B9A1-2C6D643D0B4E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Files", "04. Files\04. Files.csproj", "{A87994B3-7DB0-4A85-90A6-D9E957673A39}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{916729DD-3223-4AD5-8A6E-45AC7EE1F62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{916729DD-3223-4AD5-8A6E-45AC7EE1F62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{916729DD-3223-4AD5-8A6E-45AC7EE1F62C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6BBAEBE-A71F-4C3E-B9A1-2C6D643D0B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6BBAEBE-A71F-4C3E-B9A1-2C6D643D0B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6BBAEBE-A71F-4C3E-B9A1-2C6D643D0B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6BBAEBE-A71F-4C3E-B9A1-2C6D643D0B4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A87994B3-7DB0-4A85-90A6-D9E957673A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A87994B3-7DB0-4A85-90A6-D9E957673A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A87994B3-7DB0-4A85-90A6-D9E957673A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
