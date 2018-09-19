@@ -6,7 +6,7 @@ namespace IMDB.Models
     {
         public virtual IDbSet<Film> Films { get; set; }
 
-        public IMDBDbContext() : base("IMDB")
+        public IMDBDbContext() : base("IMDBa")
         {
         }
     }
